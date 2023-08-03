@@ -1,5 +1,6 @@
 import { useState, FormEvent } from "react";
-import { FormStateType } from "../types";
+import { FormStateType } from "../../types";
+import "./Contact.css";
 
 const Contact = () => {
   const initalFormState: FormStateType = {

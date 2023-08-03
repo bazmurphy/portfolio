@@ -1,6 +1,7 @@
-import { ProjectType } from "../types";
-import projectsData from "../data/projects.json";
-import Project from "./Project";
+import { ProjectType } from "../../types";
+import projectsData from "../../data/projects.json";
+import Project from "../Project/Project";
+import "./Projects.css";
 
 const Projects = () => {
   const projects: ProjectType[] = projectsData;

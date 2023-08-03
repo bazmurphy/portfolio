@@ -1,0 +1,11 @@
+header {
+  padding: 1.5rem 4rem 1rem 4rem;
+  background-color: hsl(203, 100%, 6%);
+  /* background-color: hsl(203, 100%, 94%); */
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 1.5rem 2rem 1rem 2rem;
+  }
+}

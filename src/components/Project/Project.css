@@ -1,0 +1,55 @@
+.project-article {
+  min-width: 300px;
+  flex: 1;
+  padding: 2rem 2rem 2rem 2rem;
+  background-color: hsla(0, 0%, 100%, 0.04);
+  /* background-color: hsla(0, 0%, 100%, 0.1); */
+}
+
+.project-title {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.project-screenshot-container {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.project-screenshot {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.project-description-short {
+  margin-bottom: 1rem;
+}
+
+.project-technologies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.project-technologies-list-item {
+  color: inherit;
+  padding: 0.15rem 0.3rem;
+  background-color: hsla(0, 0%, 0%, 0.2);
+}
+
+.project-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-github-repository-link,
+.project-live-deploy-link {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.15rem 0.3rem;
+  background-color: hsla(0, 0%, 0%, 0.3);
+}

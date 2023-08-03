@@ -1,4 +1,5 @@
-import { ProjectProps } from "../types";
+import { ProjectProps } from "../../types";
+import "./Project.css";
 
 const Project = ({ project }: ProjectProps) => {
   return (
