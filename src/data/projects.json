@@ -1,0 +1,64 @@
+[
+  {
+    "id": "project1",
+    "title": "Project 1 Name",
+    "screenshots": [
+      "project-01-01.png",
+      "project-01-02.png",
+      "project-01-03.png"
+    ],
+    "descriptionShort": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae doloribus vero molestiae temporibus reiciendis voluptates dolorem voluptatem dignissimos corporis.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "NodeJS",
+      "MongoDB",
+      "Cypress"
+    ],
+    "liveDeployLink": "https://bazmurphy-repo01.netlify.app",
+    "gitHubRepositoryLink": "https://github.com/bazmurphy/repo01"
+  },
+  {
+    "id": "project2",
+    "title": "Project 2 Name",
+    "screenshots": [
+      "project-02-01.png",
+      "project-02-02.png",
+      "project-02-03.png"
+    ],
+    "descriptionShort": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae doloribus vero molestiae temporibus reiciendis voluptates dolorem voluptatem dignissimos corporis.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "NodeJS",
+      "PostgreSQL"
+    ],
+    "liveDeployLink": "https://bazmurphy-repo02.netlify.app",
+    "gitHubRepositoryLink": "https://github.com/bazmurphy/repo02"
+  },
+  {
+    "id": "project3",
+    "title": "Project 3 Name",
+    "screenshots": [
+      "project-03-01.png",
+      "project-03-02.png",
+      "project-03-03.png"
+    ],
+    "descriptionShort": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae doloribus vero molestiae temporibus reiciendis voluptates dolorem voluptatem dignissimos corporis.",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "NodeJS",
+      "Strapi"
+    ],
+    "liveDeployLink": "https://bazmurphy-repo03.netlify.app",
+    "gitHubRepositoryLink": "https://github.com/bazmurphy/repo03"
+  }
+]

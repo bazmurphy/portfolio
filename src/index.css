@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap");
+
+:root {
+  font-family: "Sen", system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: hsla(0, 0%, 100%, 0.87);
+  background-color: hsl(0, 0%, 10%);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 1280px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+header {
+  padding: 1.5rem 4rem 1rem 4rem;
+  background-color: hsl(203, 100%, 6%);
+  /* background-color: hsl(203, 100%, 94%); */
+}
+
+main {
+  /* placeholder */
+}
+
+.hero-section {
+  padding: 2rem 4rem 4rem 4rem;
+  background-color: hsl(203, 100%, 11%);
+  /* background-color: hsl(203, 100%, 89%); */
+}
+
+.hero-title {
+  font-size: 3.2rem;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+}
+
+.about-section {
+  padding: 2rem 4rem 4rem 4rem;
+  background-color: hsl(203, 100%, 14%);
+  /* background-color: hsl(203, 100%, 86%); */
+}
+
+.about-title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.about-paragraph {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.projects-section {
+  padding: 2rem 4rem 4rem 4rem;
+  background-color: hsl(203, 100%, 17%);
+  /* background-color: hsl(203, 100%, 83%); */
+}
+
+.projects-title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.project-article {
+  min-width: 300px;
+  flex: 1;
+  padding: 2rem 2rem 2rem 2rem;
+  background-color: hsla(0, 0%, 100%, 0.04);
+  /* background-color: hsla(0, 0%, 100%, 0.1); */
+}
+
+.project-title {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.project-screenshot-container {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.project-screenshot {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.project-description-short {
+  margin-bottom: 1rem;
+}
+
+.project-technologies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+
+.project-technologies-list-item {
+  color: inherit;
+  padding: 0.15rem 0.3rem;
+  background-color: hsla(0, 0%, 0%, 0.2);
+}
+
+.project-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.project-github-repository-link,
+.project-live-deploy-link {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.15rem 0.3rem;
+  background-color: hsla(0, 0%, 0%, 0.3);
+}
+
+.contact-section {
+  padding: 2rem 4rem 4rem 4rem;
+  background-color: hsl(203, 100%, 20%);
+  /* background-color: hsl(203, 100%, 80%); */
+}
+
+.contact-title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-subcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-areas:
+    "contact-form-name contact-form-email"
+    "contact-form-message contact-form-message"
+    "contact-form-submit contact-form-submit";
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+
+.contact-form-name {
+  grid-area: contact-form-name;
+}
+
+.contact-form-email {
+  grid-area: contact-form-email;
+}
+
+.contact-form-message {
+  grid-area: contact-form-message;
+}
+
+.contact-form-submit {
+  grid-area: contact-form-submit;
+}
+
+.contact-form-group {
+  /* placeholder */
+}
+
+.contact-form-label {
+  /* placeholder */
+}
+
+.contact-form-name-input,
+.contact-form-email-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 0;
+  border-bottom: 2px solid hsla(0, 0%, 0%, 0.5);
+  background-color: hsla(0, 0%, 0%, 0.15);
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.contact-form-textarea {
+  width: 100%;
+  resize: none;
+  padding: 0.5rem;
+  border: 0;
+  border-bottom: 2px solid hsla(0, 0%, 0%, 0.5);
+  background-color: hsla(0, 0%, 0%, 0.15);
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.contact-form-submit {
+  padding: 0.5rem;
+  border: 0;
+  border-bottom: 2px solid hsla(0, 0%, 0%, 0.5);
+  background-color: hsla(0, 0%, 0%, 0.15);
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.contact-form-submit:hover {
+  background-color: hsla(0, 0%, 0%, 0.3);
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 1rem 4rem 1.5rem 4rem;
+  background-color: hsl(203, 100%, 6%);
+  /* background-color: hsl(203, 100%, 94%); */
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    padding: 1.5rem 2rem 1rem 2rem;
+  }
+
+  .hero-section {
+    padding: 2rem 2rem 3rem 2rem;
+  }
+
+  .about-section {
+    padding: 2rem 2rem 3rem 2rem;
+  }
+
+  .projects-section {
+    padding: 2rem 2rem 3rem 2rem;
+  }
+
+  .contact-section {
+    padding: 2rem 2rem 3rem 2rem;
+  }
+
+  .contact-subcontainer {
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+
+  footer {
+    padding: 1rem 2rem 1.5rem 2rem;
+  }
+}
