@@ -2,6 +2,32 @@ header {
   padding: 1.5rem 4rem 1rem 4rem;
   background-color: hsl(203, 100%, 6%);
   /* background-color: hsl(203, 100%, 94%); */
+  display: flex;
+  justify-content: space-between;
+}
+
+.mode-container {
+  /* placeholder */
+}
+
+.mode-button {
+  border: 0;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.mode-icon {
+  line-height: normal;
+  font-size: 1.2rem;
+  border-radius: 100%;
+}
+
+.mode-light-icon {
+  color: hsl(0, 0%, 90%);
+}
+
+.mode-dark-icon {
+  color: hsl(0, 0%, 10%);
 }
 
 @media screen and (max-width: 600px) {
