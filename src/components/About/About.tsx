@@ -8,7 +8,7 @@ const About = () => {
         <div className="about-title-line"></div>
         <h2 className="about-title">About</h2>
       </div>
-      <div className="about-content">
+      <div className="about-paragraph-container">
         <p className="about-paragraph">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
           molestias provident facilis voluptatibus ipsum perspiciatis quisquam,
