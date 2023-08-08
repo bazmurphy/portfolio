@@ -14,11 +14,11 @@
   position: absolute;
   height: 3rem;
   width: 8rem;
-  top: 8px;
-  left: -10px;
-  /* background-color: #2dc9e6; */
+  top: 0.5rem;
+  left: -1rem;
   background-color: #52b5ee;
   transform: skew(-25deg, 0deg);
+  border-left: 0.5rem solid #3c4fe7;
 }
 
 .about-title-line {
