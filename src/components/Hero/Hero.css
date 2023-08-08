@@ -12,7 +12,7 @@
   /* animation: animatedGradient 5s ease infinite; */
 }
 
-@keyframes animatedGradient {
+/* @keyframes animatedGradient {
   0% {
     background-position: 0% 50%;
   }
@@ -22,10 +22,10 @@
   100% {
     background-position: 0% 50%;
   }
-}
+} */
 
 .hero-copy-container {
-  padding-left: 4rem;
+  /* padding-left: 4rem; */
   padding-right: 1rem;
   display: flex;
   flex-direction: column;
@@ -33,13 +33,15 @@
 }
 
 .hero-name {
-  width: max-content;
-  padding-right: 3rem;
-  font-size: 3.2rem;
-  text-transform: uppercase;
-  /* background: linear-gradient(90deg, hsla(259, 99%, 50%, 0.4), transparent); */
-  background: linear-gradient(90deg, #5001fe, transparent);
   margin-bottom: 1rem;
+  padding: 0.5rem 3rem 0.5rem 2rem;
+  background: linear-gradient(90deg, #5001fe, transparent);
+  color: hsl(60, 100%, 70%);
+  font-size: 4rem;
+  font-family: "Julius Sans One", sans-serif;
+  letter-spacing: 0.2rem;
+  line-height: normal;
+  text-shadow: 2px 2px 2px rgb(0, 255, 255);
 }
 
 .hero-name-first-name {
@@ -47,8 +49,7 @@
 }
 
 .hero-name-first-name-first-letter {
-  /* font-size: 3.6rem; */
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .hero-name-last-name {
@@ -56,26 +57,31 @@
 }
 
 .hero-name-last-name-first-letter {
-  /* font-size: 3.4rem; */
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .hero-role {
   font-size: 1.6rem;
   color: #5001fe;
   text-transform: uppercase;
-  padding-left: 2rem;
+  padding-left: 3rem;
 }
 
 .hero-underline {
   height: 4px;
-  /* background: linear-gradient(90deg, hsla(0, 0%, 0%, 0.2), transparent); */
   background: linear-gradient(90deg, #5001fe, transparent);
-  margin-left: 2rem;
+  margin-left: 3rem;
+}
+
+.hero-underline-two {
+  height: 4px;
+  background: linear-gradient(90deg, #ffff66, transparent);
+  margin-left: 3rem;
   margin-bottom: 1rem;
 }
 
 .hero-subtitle {
+  padding-left: 3.5rem;
   font-size: 1.4rem;
 }
 
@@ -104,7 +110,7 @@
   }
 
   .hero-copy-container {
-    padding: 4rem 0 4rem 2rem;
+    padding: 3rem 1rem 3rem 0;
   }
 
   .hero-image-container {

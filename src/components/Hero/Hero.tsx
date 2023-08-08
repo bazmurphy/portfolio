@@ -14,6 +14,7 @@ const Hero = () => {
         </h2>
         <p className="hero-role">Software Developer</p>
         <div className="hero-underline"></div>
+        <div className="hero-underline-two"></div>
         <p className="hero-subtitle">
           Commitment, Enthusiasm, Humility, Competence
         </p>
