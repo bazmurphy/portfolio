@@ -83,6 +83,8 @@
 .hero-subtitle {
   padding-left: 3.5rem;
   font-size: 1.4rem;
+  color: hsl(0, 0%, 90%);
+  text-shadow: 2px 2px 3px #4002de;
 }
 
 .hero-image-container {

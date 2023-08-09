@@ -2,18 +2,45 @@
   min-width: 300px;
   flex: 1;
   padding: 2rem 2rem 2rem 2rem;
-  background-color: hsla(0, 0%, 100%, 0.04);
+  border-top: 0.4rem solid hsl(257, 100%, 38%);
+  /* background-color: hsla(0, 0%, 100%, 0.05); */
   /* background-color: hsla(0, 0%, 100%, 0.1); */
+  background: linear-gradient(180deg, hsl(226, 79%, 59%), hsl(226, 79%, 39%));
+  box-shadow: 0.5rem 0.3rem 0 0 hsl(194, 80%, 55%);
 }
 
 .project-title {
-  font-size: 1.4rem;
   margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: hsl(60, 100%, 70%);
+  text-shadow: 0px 2px 3px hsl(257, 100%, 44%);
 }
 
 .project-screenshot-container {
   max-width: 100%;
   margin-bottom: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.project-screenshot-container::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    hsl(257, 100%, 41%, 0.2),
+    hsl(257, 100%, 41%, 0.8)
+  );
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.project-screenshot-container:hover::before {
+  opacity: 0;
 }
 
 .project-screenshot {
@@ -24,6 +51,7 @@
 
 .project-description-short {
   margin-bottom: 1rem;
+  color: hsl(0, 0%, 90%);
 }
 
 .project-technologies-list {
@@ -37,7 +65,17 @@
 .project-technologies-list-item {
   color: inherit;
   padding: 0.15rem 0.3rem;
-  background-color: hsla(0, 0%, 0%, 0.2);
+  /* background-color: hsla(0, 0%, 0%, 0.2); */
+  background-color: hsl(200, 100%, 40%);
+  color: hsl(0, 0%, 90%);
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.project-technologies-list-item:hover {
+  background-color: hsl(200, 100%, 50%);
+  color: hsl(60, 100%, 70%);
+  text-shadow: 0px 2px 3px hsl(257, 100%, 44%);
 }
 
 .project-links-container {
@@ -51,5 +89,15 @@
   text-decoration: none;
   color: inherit;
   padding: 0.15rem 0.3rem;
-  background-color: hsla(0, 0%, 0%, 0.3);
+  /* background-color: hsla(0, 0%, 0%, 0.3); */
+  background-color: hsl(257, 100%, 40%);
+  color: hsl(0, 0%, 90%);
+  transition: background-color 0.5s ease;
+}
+
+.project-github-repository-link:hover,
+.project-live-deploy-link:hover {
+  background-color: hsl(257, 100%, 50%);
+  color: hsl(60, 100%, 70%);
+  text-shadow: 0px 2px 3px hsl(257, 100%, 44%);
 }

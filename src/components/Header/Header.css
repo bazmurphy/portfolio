@@ -1,9 +1,18 @@
 header {
-  padding: 1.5rem 4rem 1rem 4rem;
-  background-color: hsl(203, 100%, 6%);
+  /* background-color: hsl(203, 100%, 6%); */
   /* background-color: hsl(203, 100%, 94%); */
+}
+
+.header-subcontainer {
+  max-width: 1280px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  padding: 1rem 2rem 0.5rem 2rem;
+  /* background-color: hsl(203, 100%, 6%); */
+  /* background-color: hsl(203, 100%, 94%); */
+  border-left: 1px solid hsl(200, 100%, 50%);
+  border-right: 1px solid hsl(200, 100%, 50%);
 }
 
 .mode-container {
@@ -23,15 +32,25 @@ header {
 }
 
 .mode-light-icon {
-  color: hsl(0, 0%, 90%);
+  /* color: hsl(0, 0%, 90%); */
+  color: hsl(202, 82%, 63%);
+}
+
+.mode-light-icon:hover {
+  color: hsl(202, 82%, 43%);
 }
 
 .mode-dark-icon {
-  color: hsl(0, 0%, 10%);
+  /* color: hsl(0, 0%, 10%); */
+  color: hsl(257, 98%, 39%);
+}
+
+.mode-dark-icon:hover {
+  color: hsl(257, 98%, 59%);
 }
 
 @media screen and (max-width: 600px) {
   header {
-    padding: 1.5rem 2rem 1rem 2rem;
+    padding: 1rem 2rem 0.5rem 2rem;
   }
 }

@@ -1,31 +1,38 @@
 import "./Header.css";
 import { LuSun, LuMoon } from "react-icons/lu";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import "../../index.css";
 
 const Header = () => {
-  // refactor to context & provider etc.
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
+  // console.log(prefersDarkMode.matches);
+  const initialColorScheme = prefersDarkMode.matches ? "dark" : "light";
+
+  const [colorScheme, setColorScheme] = useState(initialColorScheme);
+
+  const toggleColorScheme = () => {
+    setColorScheme((prevColorScheme) =>
+      prevColorScheme === "light" ? "dark" : "light"
+    );
+  };
+
+  useEffect(() => {
+    document.body.className = colorScheme;
+  }, [colorScheme]);
 
   return (
     <header>
-      <h3>Header</h3>
-      <div className="mode-container">
-        {isDarkMode && (
-          <button
-            className="mode-button"
-            onClick={() => setIsDarkMode(!isDarkMode)}
-          >
-            <LuSun className="mode-icon mode-light-icon" />
+      <div className="header-subcontainer">
+        <h3>Header</h3>
+        <div className="mode-container">
+          <button className="mode-button" onClick={toggleColorScheme}>
+            {colorScheme === "light" ? (
+              <LuMoon className="mode-icon mode-dark-icon" />
+            ) : (
+              <LuSun className="mode-icon mode-light-icon" />
+            )}
           </button>
-        )}
-        {!isDarkMode && (
-          <button
-            className="mode-button"
-            onClick={() => setIsDarkMode(!isDarkMode)}
-          >
-            <LuMoon className="mode-icon mode-dark-icon" />
-          </button>
-        )}
+        </div>
       </div>
     </header>
   );
