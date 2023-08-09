@@ -50,7 +50,7 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-  header {
+  .header-subcontainer {
     padding: 1rem 2rem 0.5rem 2rem;
   }
 }
